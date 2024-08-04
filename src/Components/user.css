@@ -1,0 +1,116 @@
+/* General styles for .col-8 */
+.col-8 {
+    background-color: rgb(254, 251, 251);
+    width: 1490px; /* Fixed width */
+    border-radius: 20px;
+    margin-top: 50px;
+    overflow-x: hidden;
+    align-items: center;
+    margin-left: 80px; /* Left margin */
+    margin-right: 20px; /* Right margin */
+}
+
+/* Ensure .con uses full width and background color */
+.con {
+    overflow-x: hidden;
+    background-color: #949EFF;
+}
+
+/* Ensure form controls are responsive */
+.form-control.me-2 {
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+/* Ensure buttons are responsive */
+.btn {
+    background-color: #949EFF;
+    border-radius: 20px;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+/* Ensure button hover effect */
+.btn:hover {
+    border: 2px solid #949EFF;
+}
+
+/* Added CSS to ensure no alignment change and positioning */
+.collapse.show {
+    display: block;
+    position: relative;
+    right: 0;
+    margin-right: 0;
+}
+
+.collapse:not(.show) {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    right: 0;
+    margin-right: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1490px) {
+    .col-8 {
+        width: calc(100% - 40px); /* Adjust width to account for margins */
+        margin-left: 20px; /* Consistent margin on left */
+        margin-right: 20px; /* Consistent margin on right */
+    }
+}
+
+@media (max-width: 768px) {
+    .col-8 {
+        width: calc(100% - 40px); /* Adjust width to account for margins */
+        margin-left: 20px; /* Consistent margin on left */
+        margin-right: 20px; /* Consistent margin on right */
+    }
+}
+/* profile.css */
+
+.profile-container {
+    padding: 10px;
+  }
+  
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .profile-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Adjustments for larger screens */
+  @media (min-width: 768px) {
+    .profile-container {
+      padding: 20px;
+    }
+    .profile-icon {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 767px) {
+    .profile-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .btn-profile-icon {
+      margin-top: 10px;
+    }
+    .profile-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
