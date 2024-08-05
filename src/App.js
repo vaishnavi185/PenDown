@@ -9,9 +9,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function App() {
   return (
     <div className="App">
- {/* <Login></Login>  */}
+ <Login></Login> 
  {/* <Signup></Signup> */}
-<Userpanel></Userpanel>
+{/* <Userpanel></Userpanel> */}
     </div>
   );
 }
